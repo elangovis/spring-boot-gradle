@@ -22,16 +22,18 @@ public class APIController {
 			conn3 = DriverManager.getConnection(dbURL3, parameters);
 			Statement st = conn3.createStatement();
 			ResultSet rs = st.executeQuery("select * from ev_tgt.accounts"); {
-
+				String s = "";
 				if (rs.next()) {
 					System.out.println(rs.getString(2));
+					s = rs.getString(2);
 				}
+				
 			}} catch (SQLException e) {
 
 				e.printStackTrace();
 			}
 			if (conn3 != null) {
-				System.out.println("Connected to database #3");
+				System.out.println("Connected to database #1");
 			}
 			return "Spring Boot Elango";
 		}
