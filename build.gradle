@@ -6,7 +6,7 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}","postgresql:postgresql:9.1-901-1.jdbc4")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}","postgresql:postgresql:9.1-901-1.jdbc4","mysql:mysql-connector-java:8.0.26")
 	}
 }
 
@@ -29,5 +29,11 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('postgresql:postgresql:9.1-901-1.jdbc4')
+	compile('mysql:mysql-connector-java:8.0.26')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('javax.xml.bind:jaxb-api:2.2.11')
+	compile('com.sun.xml.bind:jaxb-core:2.2.11')
+	compile('com.sun.xml.bind:jaxb-impl:2.2.11')
+	compile('javax.activation:activation:1.1.1')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

@@ -1,4 +1,5 @@
-package spring.boot.gradle;
+package spring.boot;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

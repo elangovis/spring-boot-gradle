@@ -11,6 +11,6 @@ public class APIControllerTest {
 	@Test public void testHello() {
         APIController classUnderTest = new APIController();
         String expected = "Spring Boot Elango";
-        assertEquals(expected, classUnderTest.hello());
+        assertEquals(expected, classUnderTest.hello("1"));
     }
 }

@@ -6,5 +6,6 @@ package spring.boot.gradle;
 public class Library {
     public boolean someLibraryMethod() {
         return false;
+        
     }
 }
